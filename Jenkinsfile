@@ -6,7 +6,7 @@ pipeline {
     }
     
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('docker_id') 
+        DOCKERHUB_CREDENTIALS = credentials('dockerhub') 
         IMAGE_NAME_SERVER = 'sbika/mern-server'  
         IMAGE_NAME_CLIENT = 'sbika/mern-client' 
     }
