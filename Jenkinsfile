@@ -7,8 +7,8 @@ pipeline {
     
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub') 
-        IMAGE_NAME_SERVER = 'sbika/mern-server'  
-        IMAGE_NAME_CLIENT = 'sbika/mern-client' 
+        IMAGE_NAME_SERVER = 'sbika/mern-server1'  
+        IMAGE_NAME_CLIENT = 'sbika/mern-client1' 
     }
     
     stages {
