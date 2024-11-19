@@ -6,7 +6,7 @@ pipeline {
     }
     
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub')  // Référence aux identifiants DockerHub
+        DOCKERHUB_CREDENTIALS = credentials('docker_id')  // Référence aux identifiants DockerHub
         IMAGE_NAME_SERVER = '[username]/mern-server'  // Nom de l'image du serveur
         IMAGE_NAME_CLIENT = '[username]/mern-client'  // Nom de l'image du client
     }
@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'git@gitlab.com/project.git', credentialsId: 'Gitlab_ssh'
+                git branch: 'main', url: 'https://github.com/MohamedSbika/Mern_app_Docker', credentialsId: 'github_med'
             }
         }
         
