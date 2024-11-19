@@ -7,8 +7,8 @@ pipeline {
     
     environment {
         DOCKERHUB_CREDENTIALS = credentials('docker_id')  // Référence aux identifiants DockerHub
-        IMAGE_NAME_SERVER = '[username]/mern-server'  // Nom de l'image du serveur
-        IMAGE_NAME_CLIENT = '[username]/mern-client'  // Nom de l'image du client
+        IMAGE_NAME_SERVER = 'sbika/mern-server'  // Nom de l'image du serveur
+        IMAGE_NAME_CLIENT = 'sbika/mern-client'  // Nom de l'image du client
     }
     
     stages {
