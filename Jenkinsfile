@@ -2,13 +2,13 @@ pipeline {
     agent any
     
     triggers {
-        pollSCM('H/5 * * * *')  // Trigger tous les 5 minutes
+        pollSCM('H/5 * * * *')  
     }
     
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('docker_id')  // Référence aux identifiants DockerHub
-        IMAGE_NAME_SERVER = 'sbika/mern-server'  // Nom de l'image du serveur
-        IMAGE_NAME_CLIENT = 'sbika/mern-client'  // Nom de l'image du client
+        DOCKERHUB_CREDENTIALS = credentials('docker_id') 
+        IMAGE_NAME_SERVER = 'sbika/mern-server'  
+        IMAGE_NAME_CLIENT = 'sbika/mern-client' 
     }
     
     stages {
